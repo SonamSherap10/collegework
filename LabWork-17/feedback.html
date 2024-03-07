@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h2{
+        text-align: center;
+        font-size: 30px;
+        text-shadow: 5px 5px 5px red ;
+      }
+      label{
+        display: block;
+        margin-bottom: 10px;
+      }
+      input{
+        width: 50%;
+        padding: 10px;
+        border: 1px solid black;
+      }
+      .container{
+        border: 2px solid black;
+        box-shadow: 20px 20px 20px;
+        padding: 20px;
+        width: 500px;
+        margin: 0 auto;
+        border-radius: 20px;
+      }
+
+    </style>
+</head>
+<body>
+    <h2>Feedback Form</h2>
+    <div class="container">
+      <form action="submit_feedback.php" method="post" >
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+        
+        <input type="submit" onclick="render()" value="Submit">
+
+
+        <script>
+          const render = ()=>{
+           alert("Thank you for your feedback!");
+          }
+        </script>
+    </form>
+    </div>
+</body>
+</html>

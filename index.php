@@ -17,7 +17,7 @@ $a = $a ^ $b;
 
 echo "<br>Swapped valuesof a is: $a and b is  $b";
 
-// a. Demonstrate the usage of logical operators with conditional statements
+
 $x = 10;
 $y = 5;
 if ($x > 5 && $y < 10) {
@@ -26,7 +26,6 @@ if ($x > 5 && $y < 10) {
     echo "At least one condition is false. <br>";
 }
 
-// b. Display the day of the week based on a numeric input using a switch statement
 $day = 3; // Assuming 1 for Monday, 2 for Tuesday, and so on.
 switch ($day) {
     case 1:
@@ -75,7 +74,5 @@ foreach ($countries as $country) {
     echo $country . " ";
 }
 echo "<br>";
-
-
 
 ?>
